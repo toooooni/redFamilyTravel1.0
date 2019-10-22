@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="build/kalendae.standalone.js"></script>
+    <link rel="stylesheet" href="build/kalendae.css".css">
+    <style type="text/css" media="screen">
+.kalendae{
+    
+}
+    
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+            <div class="title"></div>
+            <div class="subtitle"></div>
+            <p class="normalWord">红色畅销价</p><div class="price"></div>
+            <p class="normalWord">月销量</p> 
+            <p class="normalWord">游玩日期</p>
+            <div class="date"> 
+              请选择游玩日期
+            </div>
+            <p class="normalWord">月销量</p> 
+            <div class="buyNow">立即预订</div>
+        </div>
+        <div class="buttomTip">
+                <p class="normalWord">营运商：红色文化园</p> 
+                <p>服务评分<img src="img/star.png" alt="">4.94</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        new Kalendae(document.body,{
+            months:1,
+            mode:'single',
+            selected:Kalendae.moment().subtract({M:1})
+        });
+        </script>
+</body>
+</html>

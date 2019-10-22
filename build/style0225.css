@@ -1,7 +1,7 @@
 .section{
     width: 100%;
     height: 100%;
-    background: url(img/background1.jpg) no-repeat center center ; 
+    background: url(build/img/background1.jpg) no-repeat center center ; 
     background-size: 80%
 }
 li{
@@ -55,7 +55,7 @@ li:hover{
 .homepage{
     width: 100%;
     height:620px;
-    background-image: url(img/background1.png);
+    background-image: url(../img/background1.png);
 }
 .second{
     width: 100%;
@@ -118,16 +118,16 @@ li:hover{
     top:10%;
 }
 .secondpic1{
-    background-image: url(img/pic1.jpg);
+    background-image: url(../img/pic1.jpg);
 }
 .secondpic2{
-    background-image: url(img/pic2.jpg);
+    background-image: url(../img/pic2.jpg);
 }
 .secondpic3{
-    background-image: url(img/pic3.jpg);
+    background-image: url(../img/pic3.jpg);
 }
 .secondpic4{
-    background-image: url(img/pic4.jpg);
+    background-image: url(../img/pic4.jpg);
 }
 .featuregroup{
     width: 1200px;
@@ -157,13 +157,13 @@ li:hover{
 .TopBorder{
     height: 8px;
     width: 100%;
-    background-image: url(img/toptriangle.jpg);
+    background-image: url(../img/toptriangle.jpg);
 }
 
 .BottonBorder{
     height: 8px;
     width: 100%;
-    background-image: url(img/bottomtriangle.jpg);
+    background-image: url(../img/bottomtriangle.jpg);
 }
 .ThirdMain{
     width: 100%;
@@ -195,12 +195,12 @@ li:hover{
 .ThirdPic1{
     left: 10%;
     top: 150px;
-    background-image: url(img/2pic1.jpg);
+    background-image: url(../img/2pic1.jpg);
 }
 .ThirdPic2{
     left:50%;
     top: -150px;
-    background-image: url(img/2pic2.jpg);
+    background-image: url(../img/2pic2.jpg);
 }
 .ThirdPic1 button,.ThirdPic2 button{
     width: 120px;
@@ -228,19 +228,19 @@ li:hover{
     margin-top: -70px;
 }
 .ThirdPic3{
-    background-image: url(img/2pic3.jpg);
+    background-image: url(../img/2pic3.jpg);
    
 }
 .ThirdPic4{
-    background-image: url(img/2pic4.jpg);
+    background-image: url(../img/2pic4.jpg);
     
 }
 .ThirdPic5{
-    background-image: url(img/2pic5.jpg);
+    background-image: url(../img/2pic5.jpg);
  
 }
 .ThirdPic6{
-    background-image: url(img/2pic6.jpg);
+    background-image: url(../img/2pic6.jpg);
    
 }
 .button1,.button2,.button3,.button4{
@@ -329,13 +329,13 @@ hr{
     margin-right: 70px;
 }
 .FourthPic1{
-    background-image: url(img/3pic1.jpg);
+    background-image: url(../img/3pic1.jpg);
 }
 .FourthPic2{
-    background-image: url(img/3pic2.jpg);
+    background-image: url(../img/3pic2.jpg);
 }
 .FourthPic3{
-    background-image: url(img/3pic3.jpg);
+    background-image: url(../img/3pic3.jpg);
 }
 .DateGroup div{
     font-size: 28px;
