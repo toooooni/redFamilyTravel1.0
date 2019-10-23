@@ -13,47 +13,22 @@
 			margin:0px;
 			padding:0px;
 		}
-		#tab{
-			position: relative;
-			width: 580px;
-			height: 400px;
-			margin:50px auto;
-			border: 1px solid #ccc;
-		}
-		.list_nav{
-			float: left;
-			width: 199px;
-			height: 50px;
-			border-right: 1px solid red;
-			background-color: #eee;
-			text-align: center;
-			line-height: 50px;
-		}
-		
-		.tab_nav{
-			display: none;
-			position: absolute;
-			top:50px;
-			width: 100%;
-			height: 350px;
-		}
-		.on{
-			display: block;
-        }
+	
         html{
         width: 100%;
         height: 100%;
+        background-color: rgb(238, 238, 238);
 
     }
     .swiper{
        background-color: white;
         width: 580px;
         height: 340px;
-        margin: 80px auto;
-        left: 5%;
+        /* margin: 80px auto; */
+        left: 11%;
+        margin-top:17px;
         position: absolute;
         overflow: hidden;
-        background-color: #d90b18;
     }
     .swiper ul{
         width: 9999px;
@@ -97,7 +72,7 @@
         width: 80px;
         position: absolute;
         bottom: 10px;
-        left: 55%;
+        left: 50%;
         transform: translateX(-50%);
         /*清除浮动*/
         /* overflow: hidden; */
@@ -117,7 +92,111 @@
         width: 8px;
         height: 8px;
     }
+    .main{
+        width: 80%;
+        height: 375px;
+        border:rgb(156, 153, 153) 1px solid;
+      
+        margin-left: 10%;
+        margin-top: 60px;
+        background-color: white;
+    }
+    .right{
+        margin-left:55%;
+        margin-top: 18px;
+      
+    }
+    .title{
+        font-size: 25px;
+        margin-right:5%;
+        color: #666;
+    }
+    .point{
+        margin: 5%;
+        color: crimson;
+        border: 1px crimson dashed;
+        margin-left:0;
+        margin-bottom:3%;
+        padding: 10px 0 15px;
+        border-radius: 3px;
+       
+    }
+    .point p{
+        margin: 6px;
+        color: #666;
+        ;
+    }
+    .heart{
+        color: crimson;
+    }
+    .protect{
+        background: url(build/img/protect.png) no-repeat center center ; 
+    }
+    .score{
+        color: crimson;
+        font-size:20px;
+    }
+    .normalWord{
+        width: 15%;
+        float: left;
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
     
+    }
+    .score{
+        width: 20px;
+        float: left;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;;
+    }
+    .allScore{
+        float: left;
+        width: 62%;
+        margin-left:10px;
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .date{
+       
+        font-size: 13px;
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: rgb(124, 123, 123) .5px solid;
+        border-radius: 10px;
+        margin-top:0px;
+        float: left;
+        left: 60%;
+        top:38%;
+     
+    }
+    .price{
+        font-size: 30px;
+        color: crimson;
+        font-weight: bolder;
+        float: left;
+        margin-top:5%;
+    }
+    .buyNow{
+        width: 150px;
+        height: 50px;
+        background-color: crimson;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        float: right;
+        margin-right: 5%;
+
+    }
+    .buttomTip{
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
     </style>
     
 </head>
@@ -150,17 +229,22 @@
     <div class="main">
         <div class="left"></div>
         <div class="right">
-            <div class="title"></div>
-            <div class="subtitle"></div>
-            <p class="normalWord">红色畅销价</p>
-            <div class="price"></div>
+            <div class="title">【红色太行山】酒店专车上门接送 ，买一赠送七重豪礼</div>
+            <div class="point">
+                   <p><span class="heart">❤</span>VIP尊享太行山9号车，更舒适，更快捷，更安全！</p> 
+                    <p><span class="heart">❤</span>16:00-18:00循环回程，人满即发车，可畅玩后下山！</p> 
+                    <p><span class="heart">❤</span>暖心赠送七重大礼包，贴心为您的旅行增加舒服和便捷</p> 
+            </div>
+           
+           
             <div class="protect"></div>
-            <p class="normalWord">月销量</p> 
+            <p class="normalWord">已售 : 65</p> 
+            <p class="normalWord">用户点评:</p> <p class="score">4.8</p>  <p class="allScore">/5.0分</p>
             <p class="normalWord">游玩日期</p>
             <div class="date"> 
               请选择游玩日期
             </div>
-            <p class="normalWord">月销量</p> 
+            <div class="price">￥ 788</div>
             <div class="buyNow">立即预订</div>
         </div>
         <div class="buttomTip">
@@ -173,7 +257,7 @@
                 <p class="normalWord">工作时间：</p>
                 <p class="number">00:00:00-23:00:00</p>
         </div>
-        <div class="buttomMain">
+        <!-- <div class="buttomMain">
                 <div id="tab">
                         <ul class="list">
                             <li class="list_nav active">使用说明</li>
@@ -190,7 +274,7 @@
                             <li class="tab_nav"> 凭发送的电子票，在前门西大街正阳市场三号楼老舍茶馆一楼票台换票，直接入园。
 
                             </li>
-                        </ul>
+                        </ul> -->
                
         </div>
     </div>
@@ -300,27 +384,7 @@
     }
 
         
-        // new Kalendae(document.body,{
-        //     months:1,
-        //     mode:'single',
-        //     selected:Kalendae.moment().subtract({M:1})
-        // });
-        // var aList=document.getElementsByClassName("list_nav"),
-		// 	aTab=document.getElementsByClassName("tab_nav"),
-		// 	index=0; //用来存储上一次的值
-		// for(var i=0;i<aList.length;i++){
-		// 	//闭包加函数自执行
-		// 	(function(i){
-		// 		aList[i].onclick=function(){
-		// 			aList[index].classList.remove("active");
-		// 			aTab[index].classList.remove("on");
-		// 			index=i;
-		// 			aList[index].classList.add("active");
-		// 			aTab[index].classList.add("on");
-		// 		}
-		// 	})(i);
-		//}
-
+        
         </script>
 </body>
 </html>
