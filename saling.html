@@ -15,7 +15,7 @@
 		}
 		#tab{
 			position: relative;
-			width: 600px;
+			width: 580px;
 			height: 400px;
 			margin:50px auto;
 			border: 1px solid #ccc;
@@ -29,9 +29,7 @@
 			text-align: center;
 			line-height: 50px;
 		}
-		.active{
-			background-color: red;
-		}
+		
 		.tab_nav{
 			display: none;
 			position: absolute;
@@ -42,11 +40,113 @@
 		.on{
 			display: block;
         }
+        html{
+        width: 100%;
+        height: 100%;
+
+    }
+    .swiper{
+       background-color: white;
+        width: 580px;
+        height: 340px;
+        margin: 80px auto;
+        left: 5%;
+        position: absolute;
+        overflow: hidden;
+        background-color: #d90b18;
+    }
+    .swiper ul{
+        width: 9999px;
+        margin-top: 0px; 
+        overflow: hidden;
+        /*清除浮动*/
+        /*transition: 1s;*/
+    }
+    .swiper li{
+        float: left;
+        width: 579px;
+        height: 340px;
+    }
+    /*按钮*/
+    .btn{
+        position: absolute;
+        top: 60%;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        margin-top: -55px;
+        text-align: center;
+        line-height: 27px;
+        border-radius: 50%;
+        font-size: 26px;
+        color: #fff;
+        background: #666;
+        opacity: 0.5;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    .next{
+        left: 540px;
+    }
+    .transi{
+        transition: 500ms;
+    }
+    /*小圆点*/
+    ul.item{
+        width: 80px;
+        position: absolute;
+        bottom: 10px;
+        left: 55%;
+        transform: translateX(-50%);
+        /*清除浮动*/
+        /* overflow: hidden; */
+        z-index: 1000;
+    }
+    .item li{
+        float: left;
+        width: 7px;
+        height: 7px;
+        border: 1px solid rgb(158, 157, 157);
+        background: rgb(158, 157, 157);
+        border-radius: 50%;
+        margin: 0 3px;
+    }
+    li.active{
+        background: rgb(224, 218, 218);
+        width: 8px;
+        height: 8px;
+    }
     
     </style>
     
 </head>
 <body>
+        <div class="swiper">
+                <div class="picBorder"></div>
+            <!--图片区域-->
+            <ul class="imgBox">
+           
+                <li><img src="img/sp1.png" alt="" /></li>
+                <li><img src="img/sp2.png" alt="" /></li>
+                <li><img src="img/sp3.png" alt="" /></li>
+                <li><img src="img/sp4.png" alt="" /></li>
+                <li><img src="img/sp5.png" alt="" /></li>
+
+           
+            </ul>
+            <!--左右按钮-->
+            <div class="btn pre">&lt;</div>
+            <div class="btn next">&gt;</div>
+            <!--小圆点-->
+            <ul class="item">
+                <!--<li class="active"></li>
+                <li></li>
+                <li></li>-->
+                
+            </ul>
+            
+        </div>
     <div class="main">
         <div class="left"></div>
         <div class="right">
@@ -200,26 +300,26 @@
     }
 
         
-        new Kalendae(document.body,{
-            months:1,
-            mode:'single',
-            selected:Kalendae.moment().subtract({M:1})
-        });
-        var aList=document.getElementsByClassName("list_nav"),
-			aTab=document.getElementsByClassName("tab_nav"),
-			index=0; //用来存储上一次的值
-		for(var i=0;i<aList.length;i++){
-			//闭包加函数自执行
-			(function(i){
-				aList[i].onclick=function(){
-					aList[index].classList.remove("active");
-					aTab[index].classList.remove("on");
-					index=i;
-					aList[index].classList.add("active");
-					aTab[index].classList.add("on");
-				}
-			})(i);
-		}
+        // new Kalendae(document.body,{
+        //     months:1,
+        //     mode:'single',
+        //     selected:Kalendae.moment().subtract({M:1})
+        // });
+        // var aList=document.getElementsByClassName("list_nav"),
+		// 	aTab=document.getElementsByClassName("tab_nav"),
+		// 	index=0; //用来存储上一次的值
+		// for(var i=0;i<aList.length;i++){
+		// 	//闭包加函数自执行
+		// 	(function(i){
+		// 		aList[i].onclick=function(){
+		// 			aList[index].classList.remove("active");
+		// 			aTab[index].classList.remove("on");
+		// 			index=i;
+		// 			aList[index].classList.add("active");
+		// 			aTab[index].classList.add("on");
+		// 		}
+		// 	})(i);
+		//}
 
         </script>
 </body>
