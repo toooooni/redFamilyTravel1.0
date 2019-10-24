@@ -267,7 +267,7 @@
         height: 150px;
         display: none; 
     }
-    .show{
+    .hearder:first-of-type{
         display: block;
     }
     </style>
@@ -366,27 +366,11 @@
         </div>
     </div>
     <script type="text/javascript">
-    
-//     window.onload = function(){
-        
-//     var oHd = document.getElementsByClassName('hearder').getElementsByTagName('div');
 
-//     var oCtt =document.getElementsByClassName('content');
-//     for(var i =0; i<oHd.length;i++){
-//         oHd[i].index = i;
-//         oHd[i].onmouseover =function(){
-//         for (var i =0;i<oCtt.length;i++){
-//             oCtt[i].className = '';
-//         }
-//         oCtt[this.index].className='.show';
-// }
-// }
-//     }
      window.onload=function(){
 
         let oHd = document.querySelector('.hearder').querySelectorAll('div');
         let oCtt = document.querySelectorAll('.tab');
-        // console.log(oCtt)
         for(var i =0; i<oHd.length;i++){
         oHd[i].index = i;
         oHd[i].onmouseover =function(){
