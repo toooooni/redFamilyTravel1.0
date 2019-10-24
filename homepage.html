@@ -5,8 +5,499 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="build/style0225.css">
-    <link rel="stylesheet" href="build/common.css">
+<style>
+.section{
+    width: 100%;
+    height: 100%;
+    background: url(img/background1.jpg) no-repeat center center ; 
+    background-size: 80%
+}
+li{
+    width: 10%;
+    height: 30px;
+    font: outline;
+    text-align: center;
+    line-height: 30px;
+    float:left;
+    border-bottom: 0;
+    position: relative;
+    margin: 70px;
+}
+.index{
+    border-left: 100px;
+    position: absolute;
+    left: 40%;
+    top: 30px;
+    width: 80%;
+    font-size:15px;
+    line-height: 40px;
+
+}
+
+.line{
+    left: 40%;
+    top:75px;
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    border-bottom:2px white dashed;
+}
+.index li a{
+    color: white;
+}
+
+li:hover{
+    border:1px white solid;
+    border-radius: 30px;
+    height: 30px;
+    background-color: #e2404b; 
+    
+}
+
+
+.banner{
+    height: 0px;
+    width: 100%;
+    background-color: #d90b18;
+}
+.homepage{
+    width: 100%;
+    height:620px;
+    background-image: url(img/background1.png);
+}
+.second{
+    width: 100%;
+    height: 740px;
+}
+.SecondTitle{
+    font-size: 32px;
+    font-weight: bolder;
+    color: #333333;
+    text-align: center;
+    float: left;
+}
+.titlekeynote{
+    color: #f29118; 
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    float: left;
+}
+.alltitle{
+    width: 770px;
+    height: 80px;
+    position: relative;
+    left: 30%;
+    top: 70px;
+}
+.titleEnglish{
+    width: 770px;
+    float: left;
+    position: relative;
+    top:15px;
+    font-size: 15px;
+    text-align:justify;
+    color: darkgray;
+}
+.introduce{
+    width: 1100px;
+    height: 90px;
+    float: left;
+    position: relative;
+    top: 80px;
+    left: 10%;
+    font-size: 15px;
+    line-height: 30px;
+}
+.picgroup div{
+    width: 262px;
+    height: 262px;
+    position: relative;
+    top: 50px;
+    margin-left: 15px;
+    border-radius: 100%;
+    float: left;
+}
+.picgroup{
+    width: 1310px;
+    height: 270px;
+    position: relative;
+    left: 9%;
+    top:10%;
+}
+.secondpic1{
+    background-image: url(img/pic1.jpg);
+}
+.secondpic2{
+    background-image: url(img/pic2.jpg);
+}
+.secondpic3{
+    background-image: url(img/pic3.jpg);
+}
+.secondpic4{
+    background-image: url(img/pic4.jpg);
+}
+.featuregroup{
+    width: 1200px;
+    height: 65px;
+    position: relative;
+    left: 15.5%;
+}
+.featuregroup div p{
+    font-size: 15px;
+    color: dimgray;
+    position: relative;
+    top: 15px;
+   left: -25px;
+   font-weight: normal;
+}
+.featuregroup div{
+    font-size: 25px;
+    font-weight: bolder;
+    color: dimgray;
+    position: relative;
+    float: left;
+    top: 150px;
+    width: 290px;
+    height: 60px;
+  
+}
+.TopBorder{
+    height: 8px;
+    width: 100%;
+    background-image: url(img/toptriangle.jpg);
+}
+
+.BottonBorder{
+    height: 8px;
+    width: 100%;
+    background-image: url(img/bottomtriangle.jpg);
+}
+.ThirdMain{
+    width: 100%;
+    height: 910px;
+    background-color: #d90b18;
+}
+.ThirdTitle{
+    color: white;
+    font-size: 35px;
+    text-align: justify;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    font-weight: bolder;
+    left: 38%;
+}
+.ThirdTitle p{
+    font-size: 20px;
+    font-weight:normal;
+    color: white;
+    position: relative;
+    top: 15px;
+}
+.ThirdPic1,.ThirdPic2{
+    width: 530px;
+    height: 300px;
+    position: relative;
+}
+.ThirdPic1{
+    left: 10%;
+    top: 150px;
+    background-image: url(img/2pic1.jpg);
+}
+.ThirdPic2{
+    left:50%;
+    top: -150px;
+    background-image: url(img/2pic2.jpg);
+}
+.ThirdPic1 button,.ThirdPic2 button{
+    width: 120px;
+    height: 40px;
+    background-color: #ffdbdb;
+    color: black;
+    float: right;
+    position: relative;
+    top: 310px;
+}
+.ThirdPic1 p,.ThirdPic2 p{
+    float: left;
+    width: 360px;
+    position: relative;
+    top: 310px;
+    font-size: 15px;
+    text-align: justify;
+    color:white;
+}
+.ThirdPic3,.ThirdPic4,.ThirdPic5,.ThirdPic6{
+    width: 260px;
+    height: 220px;
+    float: left;
+    margin-right: 18px;
+    margin-top: -70px;
+}
+.ThirdPic3{
+    background-image: url(img/2pic3.jpg);
+   
+}
+.ThirdPic4{
+    background-image: url(img/2pic4.jpg);
+    
+}
+.ThirdPic5{
+    background-image: url(img/2pic5.jpg);
+ 
+}
+.ThirdPic6{
+    background-image: url(img/2pic6.jpg);
+   
+}
+.button1,.button2,.button3,.button4{
+    width: 260px;
+    height: 40px;
+    background-color: #ffdbdb;
+    float: left;
+    margin-right: 18px;
+    margin-top: -38px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+
+}
+.ThirdPicGroup{
+    position: relative;
+    width: 1140px;
+    height: 220px;
+    left:10%;
+}
+.ButtonGrourp{
+    position: relative;
+    width: 1140px;
+    height: 40px;
+    left:10%;
+}
+.FourthMain{
+    width: 100%;
+    height: 800px;
+}
+.FourthTitle{
+    color:#d90b18;
+    font-size: 35px;
+    text-align: justify;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    font-weight: bolder;
+    left: 40%;
+}
+.FourthTitle p{
+    font-size: 18px;
+    font-weight:normal;
+    color: #d90b18;
+    position: relative;
+    top: 15px;
+}
+.SubTitle{
+    font-size: 15px;
+    font-weight: bolder;
+    position: relative;
+    top: 100px;
+    left: -5%;
+   
+}
+hr{
+    width: 1200px;
+    float: left;
+    color: #b6c5a9;
+    position: relative;
+    margin-left: 200px;
+}
+.SubTitle p{
+    font-size: 20px;
+    margin-left: 280px;
+    color: #d90b18;
+   
+}
+.FourthPicGroup{
+    margin-left: 0%;
+}
+.date{
+    
+    font-size: 30px;
+    float: left;
+    margin-top:70px;
+    margin-right: 55px;
+}
+.FourthPic1,.FourthPic2,.FourthPic3{
+    width: 330px;
+    height: 220px;
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 10%;
+    margin-right: 70px;
+}
+.FourthPic1{
+    background-image: url(img/3pic1.jpg);
+}
+.FourthPic2{
+    background-image: url(img/3pic2.jpg);
+}
+.FourthPic3{
+    background-image: url(img/3pic3.jpg);
+}
+.DateGroup div{
+    font-size: 28px;
+    font-weight: bolder;
+    float: left;
+    color:  #d90b18;
+    position: relative;
+    left: -10%;
+    margin-left: 23%;
+    margin-top: 150px;
+}
+.PGroup p a{
+    font-size: 15px;
+    color: #d90b18;
+    float: left;
+    margin-right: 70px;
+    margin-top: 50px;
+    width: 330px;
+    position: relative;
+    top: 20px;
+    line-height: 130%;
+}
+.PGroup{
+    margin-left: 10%; 
+}
+.PGroup p a:hover{
+    font-weight: bolder;
+}
+.fifth{
+    width: 100%;
+    height: 190px;
+    background-color: #d90b18;
+}
+.FifthTitle{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    margin-left: 32%;
+    height: 60px;
+    font-weight: bold;
+    line-height: 160px;
+}
+.FifthTitle span{
+   margin-left: 5%;
+   color:  rgb(235, 197, 197);
+}
+.FifthTitle p {
+    font-size: 20px;
+    color: rgb(235, 197, 197);
+    position: relative;
+    margin-top: -130px;
+    margin-left: -3%;
+}
+/* .FifthPic{
+    position: relative;
+    left: 10%;
+    top: 130px;
+}
+.FifthPic div{
+    width: 160px;
+    height: 85px;
+    float: left;
+    margin-right: 28px;
+} */
+/* .FifthPic1{
+    background-image: url(img/4pic1.jpg);
+}
+.FifthPic2{
+    background-image: url(img/4pic2.jpg);
+}
+.FifthPic3{
+    background-image: url(img/4pic3.jpg);
+}
+.FifthPic4{
+    background-image: url(img/4pic4.jpg);
+}
+.FifthPic5{
+    background-image: url(img/4pic5.jpg);
+}
+.FifthPic6{
+    background-image: url(img/4pic6.jpg);
+} */
+.LastBotton{
+    background-color: #b8000b;
+    width: 100%;
+    height: 100px;
+}
+.LastBotton p {
+    position: relative;
+    color: white;
+    margin-top: 30px;
+    margin-left:35%;
+    float: left;
+    line-height: 200%;
+}
+*{
+	box-sizing:border-box;
+	color:#000;
+}
+body{
+	font-size:12px;
+	font-family:Arial,Verdana,Tahoma,"微软雅黑","黑体";
+	line-height:120%;
+	background:#fff;
+	margin:0;
+	overflow-x:hidden;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,form,table{
+	margin:0;
+	padding:0;
+}
+a,img{
+	border:none;
+}
+img{
+	vertical-align:middle;
+	border:0;
+}
+li{
+	list-style:none;
+}
+i,em{
+	font-style:normal;
+}
+a{
+	text-decoration:none; 
+	color:#000000;
+	border:0;
+}
+a:link{
+	text-decoration:none; 
+	color:#000000;
+}
+a:visited{
+	text-decoration:none; 
+	color:#000000;
+}
+a:hover{
+	text-decoration:none; 
+	color:#000000;
+}
+a:active{
+	text-decoration:none; 
+	color:#000000;
+}
+.clearfix:after{
+	display:table;
+	content:"";
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+</style>
 </head>
 <body>
     <div class="section">
@@ -16,9 +507,7 @@
          
 
                     <!-- <div class="logo"></div> -->
-                    <div class="tel">
-                        客服热线：400-0000-0000
-                    </div>
+                    
                         <ul class="index clearfix" >
                             <li><a href="">网站首页</a></li>
                             <li><a href="placeJgs.html">红色根据地</a></li>
