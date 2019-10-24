@@ -225,7 +225,32 @@
         margin-right: 3px;
         color:rgb(68, 67, 67);
     }
-    
+    .clearfix:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+    .hearder{
+        width: 100%;
+        height: 50px;
+    }
+    .hearder div{
+        width: 33%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+        border: #666 1px solid;
+    }
+    .buttom{
+        width: 69.5%;
+        height: 200px;
+        float: left;
+        border:rgb(156, 153, 153) .8px solid;
+        background: white;
+        margin-top:5.5%;
+        margin-left: 5%;
+    }
     
     </style>
     
@@ -290,13 +315,34 @@
         </div>
         <!-- 选项卡 -->
         <div class="buttom">
-            <div class="hearder">
+            <div class="hearder clearfix">
                 <div class="use">使用说明</div>
-                <div class="cost">费用说明</div>
+                <div class="cost">咨询说明</div>
                 <div class="remoneny">退款说明</div>
-                <div class="into">入园信息</div>
+                
             </div>
-            
+            <div class="content">
+                <div>
+                        【住宿】
+                        1、行程所列酒店住宿费用2、酒店标准2人间<br/>
+                        【用餐】 
+                        4 早4正餐，8人一桌，8菜1汤，正餐标准20元/人/餐 <br/>
+                        【门票】 
+                        行程中所含景点的首道大门票 <br/>
+                        【保险】 
+                         此产品已包含旅游意外伤害保险、旅行社组合险保险，一人一份 <br/>
+                        【导游服务】 
+                        当地中文导游服务，自由活动期间除外 <br/>
+
+                    </div>
+                    <div>【疑问烦请咨询】<br>
+                            亲，如果您有疑问可咨询我们的在线客服或电话咨询4008-0000-000转1700，谢谢亲们了！ </div>
+                    <div> 行程开始前30日至15日，按旅游费用总额的5%；<br>
+                            行程开始前14日至7日，按旅游费用总额的20%；<br>
+                            行程开始前6日至4日，按旅游费用总额的50%；<br>
+                            行程开始前3日至1日，按旅游费用总额的60%；<br>
+                            行程开始当日，按旅游费用总额的70%。<br></div>
+            </div>
         </div>
                
         </div>
