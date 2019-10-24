@@ -128,9 +128,7 @@
     .heart{
         color: crimson;
     }
-    .protect{
-        background: url(build/img/protect.png) no-repeat center center ; 
-    }
+   
     .score{
         color: crimson;
         font-size:20px;
@@ -233,6 +231,8 @@
     .hearder{
         width: 100%;
         height: 50px;
+        background-color: rgb(238, 238, 238);
+        color:rgb(68, 67, 67);
     }
     .hearder div{
         width: 33%;
@@ -240,7 +240,10 @@
         text-align: center;
         line-height: 50px;
         float: left;
-        border: #666 1px solid;
+    }
+    .hearder div:hover{
+        background-color: white;
+        cursor: pointer;
     }
     .buttom{
         width: 69.5%;
@@ -250,8 +253,23 @@
         background: white;
         margin-top:5.5%;
         margin-left: 5%;
+        color:rgb(68, 67, 67); 
+
     }
-    
+    .content{
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .content div{
+        font-size: 13px;
+        line-height: 20px;
+        width: 100%;
+        height: 150px;
+        display: none; 
+    }
+    .show{
+        display: block;
+    }
     </style>
     
 </head>
@@ -316,13 +334,13 @@
         <!-- 选项卡 -->
         <div class="buttom">
             <div class="hearder clearfix">
-                <div class="use">使用说明</div>
-                <div class="cost">咨询说明</div>
-                <div class="remoneny">退款说明</div>
+                <div>使用说明</div>
+                <div>咨询说明</div>
+                <div>退款说明</div>
                 
             </div>
             <div class="content">
-                <div>
+                <div class="tab">
                         【住宿】
                         1、行程所列酒店住宿费用2、酒店标准2人间<br/>
                         【用餐】 
@@ -335,9 +353,9 @@
                         当地中文导游服务，自由活动期间除外 <br/>
 
                     </div>
-                    <div>【疑问烦请咨询】<br>
+                    <div class="tab">【疑问烦请咨询】<br>
                             亲，如果您有疑问可咨询我们的在线客服或电话咨询4008-0000-000转1700，谢谢亲们了！ </div>
-                    <div> 行程开始前30日至15日，按旅游费用总额的5%；<br>
+                    <div class="tab"> 行程开始前30日至15日，按旅游费用总额的5%；<br>
                             行程开始前14日至7日，按旅游费用总额的20%；<br>
                             行程开始前6日至4日，按旅游费用总额的50%；<br>
                             行程开始前3日至1日，按旅游费用总额的60%；<br>
@@ -348,7 +366,39 @@
         </div>
     </div>
     <script type="text/javascript">
+    
+//     window.onload = function(){
+        
+//     var oHd = document.getElementsByClassName('hearder').getElementsByTagName('div');
+
+//     var oCtt =document.getElementsByClassName('content');
+//     for(var i =0; i<oHd.length;i++){
+//         oHd[i].index = i;
+//         oHd[i].onmouseover =function(){
+//         for (var i =0;i<oCtt.length;i++){
+//             oCtt[i].className = '';
+//         }
+//         oCtt[this.index].className='.show';
+// }
+// }
+//     }
      window.onload=function(){
+
+        let oHd = document.querySelector('.hearder').querySelectorAll('div');
+        let oCtt = document.querySelectorAll('.tab');
+        // console.log(oCtt)
+        for(var i =0; i<oHd.length;i++){
+        oHd[i].index = i;
+        oHd[i].onmouseover =function(){
+            for (var i =0;i<oHd.length;i++){
+            oCtt[i].style.display="none";
+
+        }
+        oCtt[this.index].style.display="block";
+}
+}
+        
+    
             let swiper = document.querySelector(".swiper"),
                 pre = swiper.querySelector(".pre"),
                 next = swiper.querySelector(".next"),
