@@ -102,14 +102,14 @@
         background-color: white;
     }
     .right{
-        margin-left:55%;
+        margin-left:56%;
         margin-top: 18px;
       
     }
     .title{
         font-size: 25px;
         margin-right:5%;
-        color: #666;
+        color: rgb(41, 40, 40);
     }
     .point{
         margin: 5%;
@@ -123,8 +123,7 @@
     }
     .point p{
         margin: 6px;
-        color: #666;
-        ;
+        color:rgb(68, 67, 67);
     }
     .heart{
         color: crimson;
@@ -160,7 +159,7 @@
         line-height: 30px;
     }
     .date{
-       
+        
         font-size: 13px;
         width: 180px;
         height: 30px;
@@ -174,29 +173,60 @@
         top:38%;
      
     }
+    .date:hover{
+        background-color: bisque;
+        cursor: pointer;
+    }
     .price{
         font-size: 30px;
         color: crimson;
         font-weight: bolder;
         float: left;
-        margin-top:5%;
+        margin-left: -50%;
+        margin-top: 7%;
     }
     .buyNow{
+        float:right;
         width: 150px;
         height: 50px;
         background-color: crimson;
         color: white;
         line-height: 50px;
         text-align: center;
-        float: right;
         margin-right: 5%;
-
+        margin-top: 7%;
+      
+    }
+    .buyNow:hover{
+        border: gray 1px solid;
+        cursor: pointer;
     }
     .buttomTip{
-        width: 50%;
-        height: 300px;
+        width: 25%;
+        height: 200px;
         float: left;
+        margin-top:10%;
+        background-color: white;
+        border:rgb(156, 153, 153) .8px solid;
     }
+    .line{
+        width: 90%;
+        margin-left:5%;
+        height: 2px;
+        background-color: rgb(224, 221, 221);
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .buttomTip p{
+        width: 80%;
+        font-size: 14px;
+        margin-left: 10%;
+        margin-top:2px;
+        margin-right: 3px;
+        color:rgb(68, 67, 67);
+    }
+    
+    
     </style>
     
 </head>
@@ -239,7 +269,7 @@
            
             <div class="protect"></div>
             <p class="normalWord">已售 : 65</p> 
-            <p class="normalWord">用户点评:</p> <p class="score">4.8</p>  <p class="allScore">/5.0分</p>
+            <p class="normalWord">用户点评:</p> <p class="score">4.9</p>  <p class="allScore">/5.0分</p>
             <p class="normalWord">游玩日期</p>
             <div class="date"> 
               请选择游玩日期
@@ -248,33 +278,26 @@
             <div class="buyNow">立即预订</div>
         </div>
         <div class="buttomTip">
-                <p class="normalWord">营运商：红色文化园</p> 
-                <p>服务评分<img src="img/star.png" alt="">4.94</p>
+                <div class="line"></div>
+                <p class="cardWord">营运商：红色文化园</p> 
+                <p>服务评分:<img src="img/star.png" alt="">4.94</p>
                 <div class="firstLogo"></div>
-                <p class="normalWord">服务热线：</p>
+                <p class="cardWord">服务热线：</p>
                 <p class="number">400-000-000</p>
                 <div class="secondLogo"></div>
-                <p class="normalWord">工作时间：</p>
+                <p class="cardWord">工作时间：</p>
                 <p class="number">00:00:00-23:00:00</p>
         </div>
-        <!-- <div class="buttomMain">
-                <div id="tab">
-                        <ul class="list">
-                            <li class="list_nav active">使用说明</li>
-                            <li class="list_nav">费用说明</li>
-                            <li class="list_nav">入园信息</li>
-                        </ul>
-                        <ul class="tab">
-                            <li class="tab_nav on">
-                                    可参观时间：8:00—22:00（10月）
-                            </li>
-                            <li class="tab_nav">
-                                    大青山地区的和平解放专场门票1张，一杯盖碗茶。
-                            </li>
-                            <li class="tab_nav"> 凭发送的电子票，在前门西大街正阳市场三号楼老舍茶馆一楼票台换票，直接入园。
-
-                            </li>
-                        </ul> -->
+        <!-- 选项卡 -->
+        <div class="buttom">
+            <div class="hearder">
+                <div class="use">使用说明</div>
+                <div class="cost">费用说明</div>
+                <div class="remoneny">退款说明</div>
+                <div class="into">入园信息</div>
+            </div>
+            
+        </div>
                
         </div>
     </div>
